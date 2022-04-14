@@ -17,7 +17,7 @@ def col(x) :
 
 x_list = []
 while True :
-    print(" 1. 콜라츠 추측 계산하기\n 2. 지금까지 입력한 숫자 확인하기\n 3. 종료하기")
+    print(" 1. 콜라츠 추측 계산하기\n 2. 지금까지 입력한 숫자 확인하기\n 3. 숫자 기록 삭제하기\n 4. 종료하기")
     select = int(input())
     
     if select == 1 :
@@ -32,7 +32,10 @@ while True :
             cnt += 1
 
     elif select == 3 :
+        print("삭제했습니다.")
+        x_list.clear()
+    elif select == 4 :
         break
     
     else :
-        print("1~3번 기능만 구현돼있습니다.")
+        print("1~4번 기능만 구현돼있습니다.")
