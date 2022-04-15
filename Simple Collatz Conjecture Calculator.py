@@ -1,6 +1,6 @@
+
 # 콜라츠 추측의 계산에 따라 값을 구하는 함수
 # @param 2 이상의 정수
-
 def col(x) :
 	while True :
 		if x % 2 == 0 :
@@ -13,7 +13,6 @@ def col(x) :
 			print(x)
 			if x == 1:
 				break
-
 
 x_list = []
 while True :
@@ -34,6 +33,7 @@ while True :
     elif select == 3 :
         print("삭제했습니다.")
         x_list.clear()
+        
     elif select == 4 :
         break
     
