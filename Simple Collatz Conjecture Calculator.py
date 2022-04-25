@@ -29,12 +29,15 @@ while True :
         for i in range(len(x_list)) :
             print("#%d: %d " %(cnt, x_list[i]))
             cnt += 1
+        if not x_list :
+            print("기록된 숫자가 없습니다.")
 
     elif select == 3 :
         print("삭제했습니다.")
         x_list.clear()
         
     elif select == 4 :
+        print("종료합니다.")
         break
     
     else :
