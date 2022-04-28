@@ -1,17 +1,24 @@
 # 콜라츠 추측의 계산에 따라 값을 구하는 함수
 # @param 2 이상의 정수
-def toCol(num):
+def toCollatz(num):
+    colCnt = 0
     while True:
         if num % 2 == 0:
             num /= 2
-            print(num)
+            colCnt += 1
+            print(num, end = " ")
+            if colCnt % 10 == 0:
+                print()
             if num == 1:
+                print()
                 break
         if num % 2 == 1:
             num = 3 * num + 1
-            print(num)
-            if num == 1:
-                break
+            colCnt += 1
+            print(num, end=" ")
+            if colCnt % 10 == 0:
+                print()
+
 
 logList = []
 
@@ -22,7 +29,7 @@ while True:
 
         if select == 1:
             isInputNum = int(input("숫자를 입력해주세요: "))
-            toCol(isInputNum)
+            toCollatz(isInputNum)
             logList.append(isInputNum)
 
         elif select == 2:
