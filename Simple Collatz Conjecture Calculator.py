@@ -24,8 +24,8 @@ logList = []
 
 while True:
     try:
-        print(" 1. 콜라츠 추측 계산하기\n 2. 지금까지 입력한 숫자 확인하기\n 3. 숫자 기록 삭제하기\n 4. 종료하기")
-        select = int(input())
+
+        select = int(input(" 1. 콜라츠 추측 계산하기\n 2. 지금까지 입력한 숫자 확인하기\n 3. 숫자 기록 삭제하기\n 4. 종료하기\n"))
 
         if select == 1:
             isInputNum = int(input("숫자를 입력해주세요: "))
