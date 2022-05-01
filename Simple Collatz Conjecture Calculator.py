@@ -35,7 +35,7 @@ while True:
         elif select == 2:
             cnt = 1
             for i in range(len(logList)):
-                print("#%d: %d " % (cnt, logList[i]))
+                print(f"#{cnt}: {logList[i]}")
                 cnt += 1
             if not logList:
                 print("기록된 숫자가 없습니다.")
