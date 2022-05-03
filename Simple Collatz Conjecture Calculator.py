@@ -29,9 +29,9 @@ while True:
 
         if select == 1:
             isInputNum = int(input("숫자를 입력해주세요: "))
-            if isInputNum <= 0 :
+            if isInputNum <= 0:
                 print("1 이상의 수를 입력해주세요.")
-            else :
+            else:
                 toCollatz(isInputNum)
                 logList.append(isInputNum)
 
