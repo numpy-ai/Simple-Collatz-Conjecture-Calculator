@@ -24,7 +24,6 @@ logList = []
 
 while True:
     try:
-
         select = int(input(" 1. 콜라츠 추측 계산하기\n 2. 지금까지 입력한 숫자 확인하기\n 3. 숫자 기록 삭제하기\n 4. 종료하기\n"))
 
         if select == 1:
@@ -44,7 +43,7 @@ while True:
                 print("기록된 숫자가 없습니다.")
 
         elif select == 3:
-            print("삭제했습니다.")
+            print("기록을 삭제했습니다.")
             logList.clear()
 
         elif select == 4:
