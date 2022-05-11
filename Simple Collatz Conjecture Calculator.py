@@ -1,3 +1,5 @@
+import time
+
 # 콜라츠 추측의 계산에 따라 값을 구하는 함수
 # @param 2 이상의 정수
 def to_collatz(num):
@@ -31,6 +33,8 @@ while True:
             if input_num <= 0:
                 print("1 이상의 수를 입력해주세요.")
             else:
+                print("1.5초 후 결과들을 표시합니다.")
+                time.sleep(1.5)
                 to_collatz(input_num)
                 log_list.append(input_num)
 
